@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view_a_property.BestChoiceDifferentChoiceFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#fff">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+            
+            <TextView
+                android:id="@+id/bestDeal"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textColor="#BC000000"
+                android:text="Best deal for 1 night"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conGreatOffer"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bestDeal"
+                android:background="@drawable/radius_5sp_light_grey_blue"
+                >
+                <TextView
+                    android:id="@+id/greatOffer"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="40sp"
+                    android:textColor="#16ADF4"
+                    android:text="Great offer! Regular rates for this property starts from  $175 for 1 night"
+                    android:maxLines="2"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="#00000000"
+                    android:layout_marginLeft="10sp"
+                    />
+
+                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.15"
+                        android:layout_height="40sp"
+                        app:layout_constraintStart_toEndOf="@id/greatOffer"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                         >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_icon_white_lightblue"
+                        android:scaleType="centerCrop"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conPrice"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16sp"
+                android:layout_height="27sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conGreatOffer"
+                >
+                <ImageView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/snaptravelIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/snaptravel" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="$89"
+                    android:textColor="#6B3299"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity= "center_vertical"
+                    android:maxLines="1"
+                     />
+                <TextView
+                    android:text="  SnapTravel "
+                    app:layout_constraintStart_toEndOf="@+id/snaptravelIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#FF8314"
+                    android:textStyle="bold"
+                     />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conPrice"
+                android:id="@+id/conDescription"
+                android:layout_marginTop="4dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conSnapTravel"
+                    android:layout_width="70sp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+                <ImageView
+                    android:layout_marginTop="4sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="70sp"
+                    android:layout_height="48sp"
+                    android:background="@drawable/border_with_image"
+                    android:scaleType="fitXY"
+
+                    />
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20sp"
+                    android:layout_width="43sp"
+                    android:layout_height="32sp"
+                    android:text="hotel photos"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:background="@drawable/light_grey_opacity"
+                    android:textSize="11sp"
+                    android:paddingLeft="3sp"
+                    />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_marginTop="0sp"
+                    android:layout_marginLeft="8sp"
+                    android:id="@+id/bestDealTitle"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.77"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/conSnapTravel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="       Standard Room 1 King Bed"
+                    android:maxLines="2"
+                    android:textSize="15sp"
+                    android:gravity="top|left"
+                    android:textColor="#000"
+                    android:ellipsize="end"
+                   />
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginLeft="8sp"
+                    app:layout_constraintStart_toEndOf="@+id/conSnapTravel"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/purpletransparentpersons"
+                    />
+
+
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/bestDealTitle"
+                    app:layout_constraintTop_toBottomOf="@id/bestDealTitle"
+                    android:layout_marginLeft="70sp"
+                    app:flexWrap="wrap"
+                    app:maxLine="2"
+                    >
+                   <TextView
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="No breakfast"
+                       android:background="#EDEFEF"
+                       android:textColor="#000"
+                       android:gravity="center"
+                       android:textSize="15sp"
+                       android:paddingHorizontal="5dp"
+                       android:paddingVertical="1dp"
+                       />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Optional breakfast"
+                        android:background="#DDF4E1"
+                        android:textColor="#04965B"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="1dp"
+                        />
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City View"
+                        android:background="#DDF4E1"
+                        android:textColor="#04965B"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="1dp"
+                        />
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/conDescription"
+                app:layout_constraintTop_toBottomOf="@+id/conDescription"
+                android:id="@+id/bestChoice__BookNowOrMoreDetailsButtons">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="1"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="17sp"
+                    >
+                    <Button
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.48"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/bestChoice__BookNowOrMoreDetailsButtons__MoreInfo"
+                        android:text="More Details"
+                        android:textColor="#6D2F9B"
+                        android:textSize="13sp"
+                        android:background="@drawable/purpleborder_5spradius"
+                        android:paddingHorizontal="15sp"
+                        android:layout_marginLeft="3dp"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.48"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/bestChoice__BookNowOrMoreDetailsButtons__MoreInfo"
+                        android:id="@+id/bestChoice__BookNowOrMoreDetailsButtons__BookNow"
+                        android:text="Book Now"
+                        android:textColor="#fff"
+                        android:background="@drawable/purplecolor_5spradius"
+                        android:textSize="13sp"
+                        android:paddingHorizontal="15sp"
+                        android:layout_marginLeft="10sp"
+                     />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/bestChoice__BookNowOrMoreDetailsButtons"
+                app:layout_constraintTop_toBottomOf="@id/bestChoice__BookNowOrMoreDetailsButtons"
+                >
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:background="#6B434343"
+                    android:layout_width = "0dp"
+                    app:layout_constraintWidth_percent="0.95"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

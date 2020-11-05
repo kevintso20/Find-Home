@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".properties_list.SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10sp">
+        <EditText
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:hint="New York City \u2022 22/8 - 23/8 \u2022 2 guests"
+            android:textSize="18sp"
+            android:paddingHorizontal="15sp"
+            android:background="@drawable/radius_10sp_light_grey"
+            android:paddingVertical="12sp"
+            android:textColor="#9BA9BC"
+            android:maxLines="1"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
