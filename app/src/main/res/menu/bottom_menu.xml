@@ -3,10 +3,11 @@
     <item
         android:title="Hotels"
         android:icon="@drawable/ic_baseline_airline_seat_individual_suite_24"
-        android:id="@+id/searchPropertieActivity"
+        android:id="@+id/navigation_bottom_hotels"
         />
     <item
         android:title="About"
         android:icon="@drawable/ic_baseline_info_24"
+        android:id="@+id/navigation_bottom_about"
         />
 </menu>

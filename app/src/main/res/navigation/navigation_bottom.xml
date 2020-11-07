@@ -15,4 +15,11 @@
         android:name="com.example.findhome.properties_list.SearchPropertieActivity"
         android:label="activity_search_propertie"
         tools:layout="@layout/activity_search_propertie" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.findhome.detaild_search.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+
+
 </navigation>

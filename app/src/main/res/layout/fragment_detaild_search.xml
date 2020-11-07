@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".detaild_search.DetaildSearchFragment"
+    android:background="#00ffffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detaildSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="8sp"
+        android:background="#00000000"
+        android:paddingVertical="5sp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detaildSearch_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="17sp"
+            android:background="@drawable/white_10spborder"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detaildSearch_location_elements"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+            <TextView
+                android:id="@+id/detaildSearch_location_elements_leftIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_location_on_24"
+                android:backgroundTint="#6B3299"
+                android:layout_marginHorizontal="20sp"
+                />
+                <TextView
+                    android:id="@+id/detaildSearch_location_elements_text"
+                    app:layout_constraintStart_toEndOf="@id/detaildSearch_location_elements_leftIcon"
+                    app:layout_constraintEnd_toStartOf="@id/detaildSearch_location_elements_Righticon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="New York City"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20sp"
+                    />
+                <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/detaildSearch_location_elements_Righticon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_my_location_24"
+                    android:backgroundTint="#6B3299"
+                    android:layout_marginHorizontal="20sp"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detaildSearch_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detaildSearch_location"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/white_10spborder"
+
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detaildSearch_date_arrival"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/detaildSearch_date_arrival_leftIcon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_date_range_24"
+                    android:backgroundTint="#6B3299"
+                    android:layout_marginHorizontal="20sp"
+                    />
+                <TextView
+                    android:id="@+id/detaildSearch_date_arrival_date"
+                    app:layout_constraintStart_toEndOf="@id/detaildSearch_date_arrival_leftIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="November 7, Saturday"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20sp"
+                    android:paddingVertical="17sp"
+                    android:background="@drawable/bottom_shadow_noborder"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detaildSearch_date_departu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detaildSearch_date_arrival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/detaildSearch_date_departu_leftIcon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_date_range_24"
+                    android:backgroundTint="#6B3299"
+                    android:layout_marginHorizontal="20sp"
+                    />
+                <TextView
+                    android:id="@+id/detaildSearch_date_departu_date"
+                    app:layout_constraintStart_toEndOf="@id/detaildSearch_date_departu_leftIcon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="November 8, Saturday"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20sp"
+                    android:paddingVertical="17sp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detaildSearch_persons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detaildSearch_date"
+            android:paddingVertical="17sp"
+            android:background="@drawable/white_10spborder"
+            android:layout_marginTop="10sp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detaildSearch_persons_elements"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/detaildSearch_persons_elements_leftIcon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_person_24"
+                    android:backgroundTint="#6B3299"
+                    android:layout_marginHorizontal="20sp"
+                    />
+                <TextView
+                    android:id="@+id/detaildSearch_persons_elements_text"
+                    app:layout_constraintStart_toEndOf="@id/detaildSearch_persons_elements_leftIcon"
+                    app:layout_constraintEnd_toStartOf="@id/detaildSearch_persons_elements_Righticon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:text="2 adults"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20sp"
+                    />
+                <TextView
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/detaildSearch_persons_elements_Righticon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:backgroundTint="#9BA9BC"
+                    android:layout_marginHorizontal="20sp"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detaildSearch_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detaildSearch_persons"
+            android:paddingVertical="6sp"
+            android:background="@drawable/purpleborder_10spradius"
+            android:layout_marginTop="10sp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/detaildSearch_submit_elements"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="The best hotel deals"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="#6B3299"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

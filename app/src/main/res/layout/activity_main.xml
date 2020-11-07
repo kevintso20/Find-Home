@@ -7,14 +7,16 @@
     tools:context=".view_a_property.MainActivity"
     android:fitsSystemWindows="true">
 <com.example.findhome.custom_things.CustomScrollView
+    android:id="@+id/mainActivity_scrollview"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="0sp"
+    app:layout_constraintBottom_toTopOf="@+id/navigationPropertie"
     android:scrollbars="none">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
     <fragment
         android:id="@+id/fragment1"
         android:name="com.example.findhome.view_a_property.ImagesCarouselFragment"
@@ -88,5 +90,14 @@
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</com.example.findhome.custom_things.CustomScrollView>
+    </com.example.findhome.custom_things.CustomScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationPropertie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        app:menu="@menu/bottom_menu"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
